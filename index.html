@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%234f46e5'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' fill='%23fff' text-anchor='middle'%3ECE%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%234f46e5'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' fill='%23fff' text-anchor='middle'%3ECS%3C/text%3E%3C/svg%3E">
 <title>Complex System Modeling and Simulation</title>
 <style>
 :root{--bg:#eef2ff;--card:#fff;--primary:#4f46e5;--primary-dark:#4338ca;--accent:#6366f1;--accent-light:#ccfbf1;--accent-bg:#eef2ff;--text:#1e1b4b;--text-muted:#64748b;--border:#c7d2fe;--radius:12px;--shadow:0 1px 3px rgba(79,70,229,.06),0 4px 12px rgba(79,70,229,.04);--shadow-hover:0 4px 12px rgba(79,70,229,.1),0 8px 24px rgba(79,70,229,.06)}
@@ -323,7 +323,7 @@ body{font-family:'Inter','Microsoft YaHei',-apple-system,BlinkMacSystemFont,'Seg
       html += '<div class="detail"><div class="detail-grid">';
       if (a.doi) html += '<div class="d-item"><label>DOI</label><span>' + esc(a.doi) + '</span></div>';
       if (a.volume) html += '<div class="d-item"><label>Volume(Issue)</label><span>' + a.volume + '(' + a.issue + ')</span></div>';
-      if (a.firstpage) html += '<div class="d-item"><label>Article number</label><span>' + a.firstpage + (a.lastpage && a.lastpage !== a.firstpage ? '-' + a.lastpage : '') + '</span></div>';
+      if (a.firstpage) html += '<div class="d-item"><label>Pages</label><span>' + a.firstpage + (a.lastpage && a.lastpage !== a.firstpage ? '-' + a.lastpage : '') + '</span></div>';
       if (a.publication_date) html += '<div class="d-item"><label>Published</label><span>' + esc(a.publication_date) + '</span></div>';
 
       html += '</div>';
